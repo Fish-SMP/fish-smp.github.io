@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FishSMP</title>
+  <meta name="description" content="FishSMP — Minecraft SMP сервер с дружным сообществом.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#top" class="logo">⛏ FishSMP</a>
+    <nav>
+      <a href="#server">Сервер</a>
+      <a href="#join">Как зайти</a>
+      <a href="#rules">Правила</a>
+      <a href="#gallery">Галерея</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="badge">Minecraft Java · <span data-version>26.3</span></p>
+      <h1>Добро пожаловать на <span class="accent">FishSMP</span></h1>
+      <p class="lead">Место, где ты творишь историю.</p>
+    </section>
+
+    <!-- SERVER INFO -->
+    <section id="server" class="section">
+      <h2>Сервер</h2>
+      <div class="card server-card">
+        <div class="server-row">
+          <span class="label">IP-адрес</span>
+          <code id="server-ip">fishsmp.minehost.gg</code>
+          <button class="btn btn-small" id="copy-btn">Скопировать</button>
+        </div>
+        <div class="server-row">
+          <span class="label">Статус</span>
+          <span class="status" id="status"><span class="dot"></span><span id="status-text">Проверяем…</span></span>
+        </div>
+        <div class="server-row">
+          <span class="label">Игроков</span>
+          <span id="players">—</span>
+        </div>
+        <div class="server-row">
+          <span class="label">Версия</span>
+          <span id="version">26.3</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO JOIN -->
+    <section id="join" class="section">
+      <h2>Как зайти</h2>
+      <p class="muted">Сервер работает как на официальном лаунчере майнкрафта, так и на пиратских клиентах.</p>
+      <ol class="steps">
+        <li><strong>1.</strong><br><span class="muted">Зайдите в сетевую игру на версии 26.3</span></li>
+        <li><strong>2.</strong><br><span class="muted">Введите айпи сервера: fishsmp.minehost.gg</span></li>
+        <li><strong>3.</strong><br><span class="muted">Присоединяйтесь к серверу.</span></li>
+      </ol>
+      <a href="https://discord.gg/your-invite" class="btn btn-primary" target="_blank" rel="noopener">Перейти в Discord</a>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="section">
+      <h2>Правила</h2>
+      <div class="rules-grid">
+        <article class="card"><h3>1. Конфиденциальность</h3><p>Запрещён слив личной информации участников сервера.</p></article>
+        <article class="card"><h3>2. Читы</h3><p>Читы, X-Ray и эксплойты багов запрещены. Нашли баг — сообщите администрации.</p></article>
+        <article class="card"><h3>3. Реклама</h3><p>Реклама сторонних проектов запрещена без разрешения администрации.</p></article>
+        <article class="card"><h3>4. Спам</h3><p>Спам в чатах и на сервере запрещен.</p></article>
+        <article class="card"><h3>5. Лаг машины</h3><p>Строительство лаг машин строго запрещено.</p></article>
+        <article class="card"><h3>6. Скам</h3><p>Скам участников сервера запрещен.</p></article>
+      </div>
+      <p class="muted small">Правила можно менять и дополнять под ваш сервер — это только пример.</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <!-- Замените src на свои скриншоты, например images/spawn.jpg -->
+        <figure><img src="https://placehold.co/600x380/1c1f26/8b93a7?text=Спавн" alt="Спавн сервера"><figcaption>Спавн</figcaption></figure>
+        <figure><img src="https://placehold.co/600x380/1c1f26/8b93a7?text=Город" alt="Главный город"><figcaption>Главный город</figcaption></figure>
+        <figure><img src="https://placehold.co/600x380/1c1f26/8b93a7?text=Ферма" alt="Общая ферма"><figcaption>Общая ферма</figcaption></figure>
+        <figure><img src="https://placehold.co/600x380/1c1f26/8b93a7?text=Замок" alt="Замок"><figcaption>Замок</figcaption></figure>
+        <figure><img src="https://placehold.co/600x380/1c1f26/8b93a7?text=Порт" alt="Порт"><figcaption>Порт</figcaption></figure>
+        <figure><img src="https://placehold.co/600x380/1c1f26/8b93a7?text=Эндер" alt="Портал в Энд"><figcaption>Портал в Энд</figcaption></figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> FishSMP · Проект не имеет доната или какого-либо коммерческого использования</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
