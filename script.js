@@ -1,5 +1,5 @@
 // ===== НАСТРОЙКИ — поменяйте под свой сервер =====
-const SERVER_IP = "play.example.com";
+const SERVER_IP = "fishsmp.minehost.gg";
 // ================================================
 
 document.getElementById("server-ip").textContent = SERVER_IP;
